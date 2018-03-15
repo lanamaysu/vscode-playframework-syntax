@@ -1,0 +1,38 @@
+{
+    "name": "vscode-playframework-syntax",
+    "displayName": "Play Framework Syntax Highlighter",
+    "description": "Syntax highlighter for Play Framework template (Twirl) and Play Framework routes",
+    "version": "0.0.1",
+    "publisher": "lanasu",
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "extensionDependencies":[
+        "daltonjorge.scala"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "play",
+            "aliases": ["Play Scala Template (HTML)", "play"],
+            "extensions": [".scala.html"],
+            "configuration": "./language-configuration.json"
+        },{
+            "id": "routes",
+            "aliases": ["Play Routes", "routes"],
+            "extensions": [".routes"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "play",
+            "scopeName": "text.play",
+            "path": "./syntaxes/Play-Scala-Template.tmLanguage"
+        },{
+            "language": "routes",
+            "scopeName": "text.play.routes",
+            "path": "./syntaxes/Play-Routes.tmLanguage"
+        }]
+    }
+}
