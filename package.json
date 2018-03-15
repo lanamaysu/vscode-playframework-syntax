@@ -13,6 +13,10 @@
     "extensionDependencies":[
         "daltonjorge.scala"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lanamaysu/vscode-playframework-syntax.git"
+    },
     "contributes": {
         "languages": [{
             "id": "play",
